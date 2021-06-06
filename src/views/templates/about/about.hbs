@@ -1,0 +1,53 @@
+{{#each list}}
+  <div class="cards__item">
+    <div class="cards__info">
+      <div class="cards__left">
+        <div class="cards__icon"></div>
+        <div class="cards__date">{{ date }}</div>
+      </div>
+      <div class="cards__right">
+        <div class="cards__quantity">Документов: {{ items.length }}</div>
+        <div class="cards__total">&nbsp;({{ total }} &#8381;)</div>
+      </div>
+    </div>
+    <div class="cards__inner">
+      <div class="desc__list">
+        {{#each items}}
+        <div class="desc__item">
+          <div class="desc__top">
+            <div class="desc__row">
+              <div class="desc__action">
+                {{ type }} №{{ id }}
+              </div>
+              <div class="desc__summ">{{ total }} &#8381;</div>
+            </div>
+            <div class="desc__row">
+              <div class="desc__img"></div>
+              <div class="desc__quantity">Товаров: {{ item.length }}</div>
+            </div>
+          </div>
+          <div class="desc__bottom">
+            <div class="product__list">
+              {{#each item}}
+              <div class="product__item">
+                <div class="product__img">
+                  <img src="{{ image }}" alt="" class="product__pic" />
+                </div>
+                <div class="product__information">
+                  <div class="product__name">{{ name }}</div>
+                  <div class="product__summ">{{ quantity }}
+                    штук &#215;
+                    {{ price }}
+                    &#8381;</div>
+                </div>
+                <div class="product__price">{{ total }} &#8381;</div>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+{{/each}}
