@@ -1,16 +1,16 @@
 {
-  "name": "bakery",
+  "name": "test",
   "version": "0.1.0",
-  "description": "Frontend Boilerplate - A Webpack based FrontEnd Starter kit supporting ES6, SCSS and Handlebars",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "create": "node presets.js",
     "dev": "webpack-dev-server",
-    "dev:open": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open",
     "build": "webpack"
   },
-  "author": "Denni Bevilacqua",
-  "license": "ISC",
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",

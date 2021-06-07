@@ -102,7 +102,7 @@ fs.readdirSync(path.join(__dirname, 'src', 'views', 'templates')).forEach(page =
     console.log(`Building page: ${page.toUpperCase()}`);
 
     const htmlPageInit = new HtmlWebPackPlugin({
-      title: `${normalizeText(page)} | Bakery`,
+      title: `${normalizeText(page)}`,
       template: `./src/views/templates/${page}/${page}.hbs`,
       filename: `./${page != "home" ? page + "/" : ""}index.html`,
       chunks: ['main', page],
